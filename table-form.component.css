@@ -1,0 +1,69 @@
+.buttons{
+    display: flex;
+    align-items: center; /* Vertically align content */
+    gap: 10px; /* Add spacing between items */
+}
+.buttons button{
+    width: 110%; height: 60px; background-color: #0077C0; color: white; border-radius: 10px;
+}
+.all{
+    display: flex;
+    align-items: center; /* Vertically align content */
+    gap: 10px; /* Add spacing between items */
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+  
+/* Set font weight to light for header names */
+.ag-theme-alpine .ag-header-cell-label {
+    font-weight: 700 !important;
+    color: #6e6e6e !important;
+}
+
+/* Remove background color from header */
+.ag-theme-alpine .ag-header {
+    background-color: transparent !important;
+
+}
+/* Remove background color for all rows */
+.ag-theme-alpine .ag-row {
+    background-color: transparent !important;
+    color: #696868 !important;
+    font-weight: 500;
+}
+
+/* Optional: Remove hover background color for rows */
+.ag-theme-alpine .ag-row-hover {
+    background-color: transparent !important;
+}
+
+
+@media (min-width: 390px) and (max-width: 600px) {
+    .buttons{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .buttons button, .buttons .inputs{
+        width:75%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1080px) {
+    .buttons{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .buttons button{
+        width:75%;
+    }
+    .buttons .inputs{
+        width: 75%;
+    }
+}
